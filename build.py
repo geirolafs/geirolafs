@@ -11,7 +11,7 @@ PAD = 48
 THEMES = {
     "light": dict(bg="#ffffff", border="#e4e4e4", fg="#121212", muted="#767676", rule="#ebebeb",
                   shadow="#000000", shadow_op=0.10),
-    "dark":  dict(bg="#121212", border="#2a2a2a", fg="#ededed", muted="#8c8c8c", rule="#262626",
+    "dark":  dict(bg="#0d1117", border="#30363d", fg="#e6edf3", muted="#8b949e", rule="#21262d",  # GitHub dark palette
                   shadow="#000000", shadow_op=0.55),
 }
 
