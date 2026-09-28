@@ -1,1 +1,1 @@
-<img src="./not-a-dev-stats.svg" alt="GitHub stats, honest edition" width="100%">
+<img src="./not-a-dev-stats.svg" alt="GitHub stats, honest edition" width="1000" height="232">

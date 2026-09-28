@@ -136,7 +136,9 @@ def card(t):
     <stop offset="1" stop-color="#000" stop-opacity="0"/>
   </radialGradient>
 </defs>''')
-    a(f'<rect width="{W}" height="{H}" fill="{t["bg"]}"/>')
+    # Background bleeds far past the viewBox: if the <img> box is taller than the scaled card
+    # (fixed height to prevent layout shift), the letterbox strips stay the same dark
+    a(f'<rect x="-{W}" y="-{W}" width="{3*W}" height="{H + 2*W}" fill="{t["bg"]}"/>')
 
 
 

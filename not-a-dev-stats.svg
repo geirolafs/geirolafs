@@ -45,7 +45,7 @@
     <stop offset="1" stop-color="#000" stop-opacity="0"/>
   </radialGradient>
 </defs>
-<rect width="1000" height="232" fill="#121212"/>
+<rect x="-1000" y="-1000" width="3000" height="2232" fill="#121212"/>
 <g transform="translate(0,-180)">
 <g class="in" style="animation-delay:300ms">
 <circle cx="201.0" cy="224.5" r="4" fill="#0040ff"/>
