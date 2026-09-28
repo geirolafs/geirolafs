@@ -47,82 +47,82 @@
 </defs>
 <rect x="-846" y="-846" width="2538" height="1892" fill="#0d1117"/>
 <g transform="translate(0,-196)">
-<g class="in" style="animation-delay:800ms">
-<circle cx="142.0" cy="224.5" r="4" fill="#0040ff"/>
-<text class="lang" x="154.0" y="229.0">Move some divs</text>
-<text class="lang m" x="469.5" y="229.0" text-anchor="end">38%</text>
+<g class="in" style="animation-delay:1100ms">
+<circle cx="517.5" cy="224.5" r="4" fill="#0040ff"/>
+<text class="lang" x="529.5" y="229.0">Move some divs</text>
+<text class="lang m" x="845.0" y="229.0" text-anchor="end">38%</text>
 </g>
-<line class="rule" style="animation-delay:850ms" x1="138.0" x2="469.5" y1="238.5" y2="238.5" stroke="#21262d"/>
-<g class="in" style="animation-delay:980ms">
-<circle cx="142.0" cy="251.1" r="4" fill="#668cff"/>
-<text class="lang" x="154.0" y="255.6">Approve diffs</text>
-<text class="lang m" x="469.5" y="255.6" text-anchor="end">24%</text>
+<line class="rule" style="animation-delay:1150ms" x1="513.5" x2="845.0" y1="238.5" y2="238.5" stroke="#21262d"/>
+<g class="in" style="animation-delay:1280ms">
+<circle cx="517.5" cy="251.1" r="4" fill="#668cff"/>
+<text class="lang" x="529.5" y="255.6">Approve diffs</text>
+<text class="lang m" x="845.0" y="255.6" text-anchor="end">24%</text>
 </g>
-<line class="rule" style="animation-delay:1030ms" x1="138.0" x2="469.5" y1="265.1" y2="265.1" stroke="#21262d"/>
-<g class="in" style="animation-delay:1160ms">
-<circle cx="142.0" cy="277.7" r="4" fill="#b3c5ff"/>
-<text class="lang" x="154.0" y="282.2">Ask The AI</text>
-<text class="lang m" x="469.5" y="282.2" text-anchor="end">14%</text>
+<line class="rule" style="animation-delay:1330ms" x1="513.5" x2="845.0" y1="265.1" y2="265.1" stroke="#21262d"/>
+<g class="in" style="animation-delay:1460ms">
+<circle cx="517.5" cy="277.7" r="4" fill="#b3c5ff"/>
+<text class="lang" x="529.5" y="282.2">Ask The AI</text>
+<text class="lang m" x="845.0" y="282.2" text-anchor="end">14%</text>
 </g>
-<line class="rule" style="animation-delay:1210ms" x1="138.0" x2="469.5" y1="291.7" y2="291.7" stroke="#21262d"/>
-<g class="in" style="animation-delay:1340ms">
-<circle cx="142.0" cy="304.3" r="4" fill="#e3d6d2"/>
-<text class="lang" x="154.0" y="308.8">!important</text>
-<text class="lang m" x="469.5" y="308.8" text-anchor="end">11%</text>
+<line class="rule" style="animation-delay:1510ms" x1="513.5" x2="845.0" y1="291.7" y2="291.7" stroke="#21262d"/>
+<g class="in" style="animation-delay:1640ms">
+<circle cx="517.5" cy="304.3" r="4" fill="#e3d6d2"/>
+<text class="lang" x="529.5" y="308.8">!important</text>
+<text class="lang m" x="845.0" y="308.8" text-anchor="end">11%</text>
 </g>
-<line class="rule" style="animation-delay:1390ms" x1="138.0" x2="469.5" y1="318.3" y2="318.3" stroke="#21262d"/>
-<g class="in" style="animation-delay:1520ms">
-<circle cx="142.0" cy="330.9" r="4" fill="#f6bfb3"/>
-<g><text class="lang" x="157.4" y="335.4" text-anchor="middle">⌘</text><text class="lang" x="164.3" y="335.4" text-anchor="middle">C</text><text class="lang" x="178.2" y="335.4" text-anchor="middle">&amp;</text><text class="lang" x="191.9" y="335.4" text-anchor="middle">⌘</text><text class="lang" x="198.8" y="335.4" text-anchor="middle">V</text></g>
-<text class="lang m" x="469.5" y="335.4" text-anchor="end">8%</text>
+<line class="rule" style="animation-delay:1690ms" x1="513.5" x2="845.0" y1="318.3" y2="318.3" stroke="#21262d"/>
+<g class="in" style="animation-delay:1820ms">
+<circle cx="517.5" cy="330.9" r="4" fill="#f6bfb3"/>
+<g><text class="lang" x="533.0" y="335.4" text-anchor="middle">⌘</text><text class="lang" x="539.9" y="335.4" text-anchor="middle">C</text><text class="lang" x="553.6" y="335.4" text-anchor="middle">&amp;</text><text class="lang" x="567.5" y="335.4" text-anchor="middle">⌘</text><text class="lang" x="574.4" y="335.4" text-anchor="middle">V</text></g>
+<text class="lang m" x="845.0" y="335.4" text-anchor="end">8%</text>
 </g>
-<line class="rule" style="animation-delay:1570ms" x1="138.0" x2="469.5" y1="344.9" y2="344.9" stroke="#21262d"/>
-<g class="in" style="animation-delay:1700ms">
-<circle cx="142.0" cy="357.5" r="4" fill="#ffe577"/>
-<text class="lang" x="154.0" y="362.0">Things no one will notice</text>
-<text class="lang m" x="469.5" y="362.0" text-anchor="end">5%</text>
+<line class="rule" style="animation-delay:1870ms" x1="513.5" x2="845.0" y1="344.9" y2="344.9" stroke="#21262d"/>
+<g class="in" style="animation-delay:2000ms">
+<circle cx="517.5" cy="357.5" r="4" fill="#ffe577"/>
+<text class="lang" x="529.5" y="362.0">Things no one will notice</text>
+<text class="lang m" x="845.0" y="362.0" text-anchor="end">5%</text>
 </g>
-<line class="rule" style="animation-delay:1750ms" x1="138.0" x2="469.5" y1="371.5" y2="371.5" stroke="#21262d"/>
-<g class="in" style="animation-delay:450ms">
-<text class="lang" x="513.5" y="229.0">Stars</text>
-<text class="lang m" x="602.5" y="229.0">I’m a giver (212), not a taker</text>
-<text class="lang m" x="845.0" y="229.0" text-anchor="end">0</text>
+<line class="rule" style="animation-delay:2050ms" x1="513.5" x2="845.0" y1="371.5" y2="371.5" stroke="#21262d"/>
+<g class="in" style="animation-delay:150ms">
+<text class="lang" x="1" y="229.0">Stars</text>
+<text class="lang m" x="90" y="229.0">I’m a giver (212), not a taker</text>
+<text class="lang m" x="332.5" y="229.0" text-anchor="end">0</text>
 </g>
-<line class="rule" style="animation-delay:500ms" x1="513.5" x2="845.0" y1="238.5" y2="238.5" stroke="#21262d"/>
-<g class="in" style="animation-delay:520ms">
-<text class="lang" x="513.5" y="255.6">Commits</text>
-<text class="lang m" x="602.5" y="255.6">git commit -m &quot;fix previous&quot;</text>
-<text class="lang m" x="845.0" y="255.6" text-anchor="end">119</text>
+<line class="rule" style="animation-delay:200ms" x1="1" x2="332.5" y1="238.5" y2="238.5" stroke="#21262d"/>
+<g class="in" style="animation-delay:220ms">
+<text class="lang" x="1" y="255.6">Commits</text>
+<text class="lang m" x="90" y="255.6">git commit -m &quot;fix previous&quot;</text>
+<text class="lang m" x="332.5" y="255.6" text-anchor="end">119</text>
 </g>
-<line class="rule" style="animation-delay:570ms" x1="513.5" x2="845.0" y1="265.1" y2="265.1" stroke="#21262d"/>
-<g class="in" style="animation-delay:590ms">
-<text class="lang" x="513.5" y="282.2">PRs</text>
-<text class="lang m" x="602.5" y="282.2">git push -f origin master</text>
-<text class="lang m" x="845.0" y="282.2" text-anchor="end">0</text>
+<line class="rule" style="animation-delay:270ms" x1="1" x2="332.5" y1="265.1" y2="265.1" stroke="#21262d"/>
+<g class="in" style="animation-delay:290ms">
+<text class="lang" x="1" y="282.2">PRs</text>
+<text class="lang m" x="90" y="282.2">git push -f origin master</text>
+<text class="lang m" x="332.5" y="282.2" text-anchor="end">0</text>
 </g>
-<line class="rule" style="animation-delay:640ms" x1="513.5" x2="845.0" y1="291.7" y2="291.7" stroke="#21262d"/>
-<g class="in" style="animation-delay:660ms">
-<text class="lang" x="513.5" y="308.8">Issues</text>
-<text class="lang m" x="602.5" y="308.8">no issues on my end</text>
-<text class="lang m" x="845.0" y="308.8" text-anchor="end">Yes</text>
+<line class="rule" style="animation-delay:340ms" x1="1" x2="332.5" y1="291.7" y2="291.7" stroke="#21262d"/>
+<g class="in" style="animation-delay:360ms">
+<text class="lang" x="1" y="308.8">Issues</text>
+<text class="lang m" x="90" y="308.8">no issues on my end</text>
+<text class="lang m" x="332.5" y="308.8" text-anchor="end">Yes</text>
 </g>
-<line class="rule" style="animation-delay:710ms" x1="513.5" x2="845.0" y1="318.3" y2="318.3" stroke="#21262d"/>
-<g class="in" style="animation-delay:730ms">
-<text class="lang" x="513.5" y="335.4">Contributed</text>
-<text class="lang m" x="602.5" y="335.4">Figma frames</text>
-<text class="lang m" x="845.0" y="335.4" text-anchor="end">11,402</text>
+<line class="rule" style="animation-delay:410ms" x1="1" x2="332.5" y1="318.3" y2="318.3" stroke="#21262d"/>
+<g class="in" style="animation-delay:430ms">
+<text class="lang" x="1" y="335.4">Contributed</text>
+<text class="lang m" x="90" y="335.4">Figma frames</text>
+<text class="lang m" x="332.5" y="335.4" text-anchor="end">11,402</text>
 </g>
-<line class="rule" style="animation-delay:780ms" x1="513.5" x2="845.0" y1="344.9" y2="344.9" stroke="#21262d"/>
-<g class="in" style="animation-delay:800ms">
-<text class="lang" x="513.5" y="362.0">Tests</text>
-<text class="lang m" x="602.5" y="362.0">ok.</text>
-<text class="lang m" x="845.0" y="362.0" text-anchor="end">0</text>
+<line class="rule" style="animation-delay:480ms" x1="1" x2="332.5" y1="344.9" y2="344.9" stroke="#21262d"/>
+<g class="in" style="animation-delay:500ms">
+<text class="lang" x="1" y="362.0">Tests</text>
+<text class="lang m" x="90" y="362.0">ok.</text>
+<text class="lang m" x="332.5" y="362.0" text-anchor="end">0</text>
 </g>
-<line class="rule" style="animation-delay:850ms" x1="513.5" x2="845.0" y1="371.5" y2="371.5" stroke="#21262d"/>
-<ellipse class="shade" style="animation-delay:100ms" cx="47.5" cy="345.5" rx="36.0" ry="6" fill="url(#sh)"/>
-<g class="ball" style="animation-delay:150ms">
+<line class="rule" style="animation-delay:550ms" x1="1" x2="332.5" y1="371.5" y2="371.5" stroke="#21262d"/>
+<ellipse class="shade" style="animation-delay:400ms" cx="423.0" cy="345.5" rx="36.0" ry="6" fill="url(#sh)"/>
+<g class="ball" style="animation-delay:450ms">
 <defs>
-  <clipPath id="sph"><circle cx="47.5" cy="287" r="40"/></clipPath>
+  <clipPath id="sph"><circle cx="423.0" cy="287" r="40"/></clipPath>
   <radialGradient id="sph-body" cx=".5" cy=".36" r=".68">
     <stop offset="0" stop-color="#e4e4e8"/>
     <stop offset=".55" stop-color="#c0c1c7"/>
@@ -132,31 +132,31 @@
     <stop offset=".6" stop-color="#7d7e88" stop-opacity="0"/>
     <stop offset="1" stop-color="#7d7e88" stop-opacity=".55"/>
   </radialGradient>
-  <filter id="sph-soft" filterUnits="userSpaceOnUse" x="-32.5" y="207" width="160" height="160"><feGaussianBlur stdDeviation="6.40"/></filter>
-  <filter id="sph-grain" filterUnits="userSpaceOnUse" x="7.5" y="247" width="80" height="80">
+  <filter id="sph-soft" filterUnits="userSpaceOnUse" x="343.0" y="207" width="160" height="160"><feGaussianBlur stdDeviation="6.40"/></filter>
+  <filter id="sph-grain" filterUnits="userSpaceOnUse" x="383.0" y="247" width="80" height="80">
     <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" stitchTiles="stitch" seed="1" result="n">
-      <animate attributeName="seed" values="1;2;3;4;5;6;7;8;9;10;11;12" dur="1.2s" begin="0.15s" calcMode="discrete" fill="freeze"/>
+      <animate attributeName="seed" values="1;2;3;4;5;6;7;8;9;10;11;12" dur="1.2s" begin="0.45s" calcMode="discrete" fill="freeze"/>
     </feTurbulence>
     <feColorMatrix in="n" type="saturate" values="0"/>
   </filter>
 </defs>
 <g clip-path="url(#sph)">
-  <circle cx="47.5" cy="287" r="40" fill="url(#sph-body)"/>
-  <ellipse class="band" style="animation-delay:150ms" cx="47.5" cy="299.00" rx="47.20" ry="15.20" fill="#3c3d4e" filter="url(#sph-soft)"/>
-  <ellipse cx="47.5" cy="331.80" rx="38.00" ry="16.80" fill="#c9cad0" filter="url(#sph-soft)"/>
-  <circle cx="47.5" cy="287" r="40" fill="url(#sph-vig)"/>
-  <g class="hl" style="animation-delay:150ms">
-    <ellipse cx="47.5" cy="263.80" rx="14.40" ry="9.60" fill="#ffffff" filter="url(#sph-soft)"/>
-    <ellipse cx="47.5" cy="263.80" rx="8.80" ry="5.20" fill="#ffffff" filter="url(#sph-soft)"/>
+  <circle cx="423.0" cy="287" r="40" fill="url(#sph-body)"/>
+  <ellipse class="band" style="animation-delay:450ms" cx="423.0" cy="299.00" rx="47.20" ry="15.20" fill="#3c3d4e" filter="url(#sph-soft)"/>
+  <ellipse cx="423.0" cy="331.80" rx="38.00" ry="16.80" fill="#c9cad0" filter="url(#sph-soft)"/>
+  <circle cx="423.0" cy="287" r="40" fill="url(#sph-vig)"/>
+  <g class="hl" style="animation-delay:450ms">
+    <ellipse cx="423.0" cy="263.80" rx="14.40" ry="9.60" fill="#ffffff" filter="url(#sph-soft)"/>
+    <ellipse cx="423.0" cy="263.80" rx="8.80" ry="5.20" fill="#ffffff" filter="url(#sph-soft)"/>
   </g>
-  <rect x="7.5" y="247" width="80" height="80" filter="url(#sph-grain)" opacity=".4" style="mix-blend-mode:overlay"/>
+  <rect x="383.0" y="247" width="80" height="80" filter="url(#sph-grain)" opacity=".4" style="mix-blend-mode:overlay"/>
 </g>
 </g>
-<path class="seg" pathLength="1" style="animation-delay:920ms;animation-duration:706ms" d="M47.50 242.50 A44.5 44.5 0 0 1 79.74 317.68" fill="none" stroke="#0040ff" stroke-width="4"/>
-<path class="seg" pathLength="1" style="animation-delay:1100ms;animation-duration:538ms" d="M77.96 319.44 A44.5 44.5 0 0 1 18.91 321.10" fill="none" stroke="#668cff" stroke-width="4"/>
-<path class="seg" pathLength="1" style="animation-delay:1280ms;animation-duration:418ms" d="M17.04 319.44 A44.5 44.5 0 0 1 3.00 286.70" fill="none" stroke="#b3c5ff" stroke-width="4"/>
-<path class="seg" pathLength="1" style="animation-delay:1460ms;animation-duration:382ms" d="M3.09 284.21 A44.5 44.5 0 0 1 13.40 258.41" fill="none" stroke="#e3d6d2" stroke-width="4"/>
-<path class="seg" pathLength="1" style="animation-delay:1640ms;animation-duration:346ms" d="M15.06 256.54 A44.5 44.5 0 0 1 31.39 245.52" fill="none" stroke="#f6bfb3" stroke-width="4"/>
-<path class="seg" pathLength="1" style="animation-delay:1820ms;animation-duration:310ms" d="M33.75 244.68 A44.5 44.5 0 0 1 45.00 242.57" fill="none" stroke="#ffe577" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:1220ms;animation-duration:706ms" d="M423.00 242.50 A44.5 44.5 0 0 1 455.24 317.68" fill="none" stroke="#0040ff" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:1400ms;animation-duration:538ms" d="M453.46 319.44 A44.5 44.5 0 0 1 394.41 321.10" fill="none" stroke="#668cff" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:1580ms;animation-duration:418ms" d="M392.54 319.44 A44.5 44.5 0 0 1 378.50 286.70" fill="none" stroke="#b3c5ff" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:1760ms;animation-duration:382ms" d="M378.59 284.21 A44.5 44.5 0 0 1 388.90 258.41" fill="none" stroke="#e3d6d2" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:1940ms;animation-duration:346ms" d="M390.56 256.54 A44.5 44.5 0 0 1 406.89 245.52" fill="none" stroke="#f6bfb3" stroke-width="4"/>
+<path class="seg" pathLength="1" style="animation-delay:2120ms;animation-duration:310ms" d="M409.25 244.68 A44.5 44.5 0 0 1 420.50 242.57" fill="none" stroke="#ffe577" stroke-width="4"/>
 </g>
 </svg>

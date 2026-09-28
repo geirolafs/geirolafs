@@ -148,10 +148,16 @@ def card(t):
     seg_gap = 2.5      # gap between ring segments
     rr = 40 + seg_gap + 2  # ring radius: sphere r + same gap + half the 4px stroke
 
-    # Languages, middle. Each row lands, then its ring segment draws: one beat per language
-    lang_at = [800 + i * 180 for i in range(len(LANGS))]
-    lx = PAD + 2 * rr + 4 + gap
-    cw = (W - PAD - lx - gap) / 2  # two equal text columns fill the rest
+    # Columns, left to right: stats | sphere | languages
+    sw = 2 * rr + 4                          # sphere + ring width
+    cw = (W - 2 * PAD - sw - 2 * gap) / 2    # two equal text columns
+    sx = PAD
+    ball_x = sx + cw + gap + sw / 2
+    lx = ball_x + sw / 2 + gap
+    ball_delay = 450                          # after the stats have come in
+
+    # Languages, right. Each row lands, then its ring segment draws: one beat per language
+    lang_at = [ball_delay + 650 + i * 180 for i in range(len(LANGS))]
     for i, (name, pct, col) in enumerate(LANGS):
         y = top + i * 26.6
         a(f'<g class="in" style="animation-delay:{lang_at[i]}ms">')
@@ -164,20 +170,18 @@ def card(t):
         a('</g>')
         a(f'<line class="rule" style="animation-delay:{lang_at[i] + 50}ms" x1="{lx}" x2="{lx + cw}" y1="{y + 9.5}" y2="{y + 9.5}" stroke="{t["rule"]}"/>')
 
-    # Stats, right: label, note, value right-aligned
-    sx = lx + cw + gap
+    # Stats, left: label, note, value right-aligned
     for i, (label, num, note) in enumerate(STATS):
         y = top + i * 26.6
-        a(f'<g class="in" style="animation-delay:{450 + i*70}ms">')
+        a(f'<g class="in" style="animation-delay:{150 + i*70}ms">')
         a(f'<text class="lang" x="{sx}" y="{y}">{escape(label)}</text>')
         a(f'<text class="lang m" x="{sx + 89}" y="{y}">{escape(note)}</text>')
         a(f'<text class="lang m" x="{sx + cw}" y="{y}" text-anchor="end">{escape(num)}</text>')
         a('</g>')
-        a(f'<line class="rule" style="animation-delay:{500 + i*70}ms" x1="{sx}" x2="{sx + cw}" y1="{y + 9.5}" y2="{y + 9.5}" stroke="{t["rule"]}"/>')
+        a(f'<line class="rule" style="animation-delay:{200 + i*70}ms" x1="{sx}" x2="{sx + cw}" y1="{y + 9.5}" y2="{y + 9.5}" stroke="{t["rule"]}"/>')
 
-    # The chrome sphere, left, ringed by the language split
-    cx, cy, r = PAD + rr + 2, 287, 40
-    ball_delay = 150
+    # The chrome sphere, centre, ringed by the language split
+    cx, cy, r = ball_x, 287, 40
     a(f'<ellipse class="shade" style="animation-delay:{ball_delay - 50}ms" cx="{cx}" cy="{cy + rr + 14}" rx="{r*0.9}" ry="6" fill="url(#sh)"/>')
     a(f'<g class="ball" style="animation-delay:{ball_delay}ms">')
     a(sphere(cx, cy, r, delay=ball_delay))
