@@ -107,7 +107,7 @@ def card(t):
   .rule  {{ stroke-dasharray: 432; stroke-dashoffset: 432; animation: draw .9s cubic-bezier(.23,1,.32,1) forwards; }}
   .grow  {{ transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: grow 1.1s cubic-bezier(.23,1,.32,1) forwards; }}
   .ball  {{ transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: ball .9s cubic-bezier(.23,1,.32,1) forwards; }}
-  .ring  {{ animation: sweep 1.3s cubic-bezier(.65,0,.35,1) forwards; }}
+  .seg   {{ stroke-dasharray: 1 1; stroke-dashoffset: 1; animation: sweep .5s cubic-bezier(.23,1,.32,1) forwards; }}
   .shade {{ transform-box: fill-box; transform-origin: 50% 50%; opacity: 0; animation: shade 1.3s cubic-bezier(.23,1,.32,1) forwards; }}
   @keyframes rise {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: none; }} }}
   @keyframes draw {{ to {{ stroke-dashoffset: 0; }} }}
@@ -126,7 +126,7 @@ def card(t):
     100% {{ opacity: {t["shadow_op"]}; transform: scale(1); }}
   }}
   @media (prefers-reduced-motion: reduce) {{
-    .in, .rule, .grow, .ball, .shade, .ring, .hl, .band {{ animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }}
+    .in, .rule, .grow, .ball, .shade, .seg, .hl, .band {{ animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }}
     .shade {{ opacity: {t["shadow_op"]}; }}
   }}
 </style>''')
@@ -148,12 +148,13 @@ def card(t):
     seg_gap = 2.5      # gap between ring segments
     rr = 40 + seg_gap + 2  # ring radius: sphere r + same gap + half the 4px stroke
 
-    # Languages, middle
+    # Languages, middle. Each row lands, then its ring segment draws: one beat per language
+    lang_at = [800 + i * 180 for i in range(len(LANGS))]
     lx = PAD + 2 * rr + 4 + gap
     cw = (W - PAD - lx - gap) / 2  # two equal text columns fill the rest
     for i, (name, pct, col) in enumerate(LANGS):
         y = top + i * 26.6
-        a(f'<g class="in" style="animation-delay:{300 + i*70}ms">')
+        a(f'<g class="in" style="animation-delay:{lang_at[i]}ms">')
         a(f'<circle cx="{lx + 4}" cy="{y - 4.5}" r="4" fill="{col}"/>')
         if name in MONO:
             a(mono("lang", lx + 16, y, name))
@@ -161,7 +162,7 @@ def card(t):
             a(f'<text class="lang" x="{lx + 16}" y="{y}">{escape(name)}</text>')
         a(f'<text class="lang m" x="{lx + cw}" y="{y}" text-anchor="end">{pct}%</text>')
         a('</g>')
-        a(f'<line class="rule" style="animation-delay:{350 + i*70}ms" x1="{lx}" x2="{lx + cw}" y1="{y + 9.5}" y2="{y + 9.5}" stroke="{t["rule"]}"/>')
+        a(f'<line class="rule" style="animation-delay:{lang_at[i] + 50}ms" x1="{lx}" x2="{lx + cw}" y1="{y + 9.5}" y2="{y + 9.5}" stroke="{t["rule"]}"/>')
 
     # Stats, right: label, note, value right-aligned
     sx = lx + cw + gap
@@ -182,17 +183,21 @@ def card(t):
     a(sphere(cx, cy, r, delay=ball_delay))
     a('</g>')
 
-    # Ring: segments sit in a mask that sweeps round once the sphere has landed
-    circ = 2 * 3.141592653589793 * rr
-    a(f'<mask id="sweep"><circle class="ring" style="animation-delay:{ball_delay + 800}ms" cx="{cx}" cy="{cy}" r="{rr}" fill="none" stroke="#fff" stroke-width="8" stroke-dasharray="{circ:.2f} {circ:.2f}" stroke-dashoffset="{circ:.2f}"/></mask>')
-    a(f'<g mask="url(#sweep)" transform="rotate(-90 {cx} {cy})">')
+    # Ring: one arc per language, clockwise from 12 o'clock, drawn just after its row appears
+    from math import cos, sin, pi
+    circ = 2 * pi * rr
     start = 0.0
-    for _, pct, col in LANGS:
+    for i, (_, pct, col) in enumerate(LANGS):
         seg = circ * pct / 100
-        a(f'<circle cx="{cx}" cy="{cy}" r="{rr}" fill="none" stroke="{col}" stroke-width="4" '
-          f'stroke-dasharray="{max(seg - seg_gap, 0.5):.2f} {circ:.2f}" stroke-dashoffset="{-start:.2f}"/>')
+        t0 = (start / circ) * 2 * pi - pi / 2
+        t1 = ((start + seg - seg_gap) / circ) * 2 * pi - pi / 2
+        x0, y0 = cx + rr * cos(t0), cy + rr * sin(t0)
+        x1, y1 = cx + rr * cos(t1), cy + rr * sin(t1)
+        large = 1 if seg - seg_gap > circ / 2 else 0
+        dur = 250 + pct * 12  # bigger slices take longer to draw
+        a(f'<path class="seg" pathLength="1" style="animation-delay:{lang_at[i] + 120}ms;animation-duration:{dur}ms" '
+          f'd="M{x0:.2f} {y0:.2f} A{rr} {rr} 0 {large} 1 {x1:.2f} {y1:.2f}" fill="none" stroke="{col}" stroke-width="4"/>')
         start += seg
-    a('</g>')
 
     a('</g>')
     a('</svg>')
