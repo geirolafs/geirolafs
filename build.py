@@ -4,9 +4,9 @@ Edit STATS / LANGS below, then run: python3 build.py
 """
 from html import escape
 
-W, H = 1000, 232
-SHIFT = -180  # layout coordinates below were drawn for a taller card; this moves them into view
-PAD = 48
+W, H = 846, 200  # 846 = GitHub profile README width on desktop, so it renders 1:1
+SHIFT = -196  # layout coordinates below were drawn for a taller card; this moves them into view
+PAD = 1  # content runs edge to edge; GitHub's box supplies the margin
 
 THEMES = {
     "light": dict(bg="#ffffff", border="#e4e4e4", fg="#121212", muted="#767676", rule="#ebebeb",
@@ -143,7 +143,7 @@ def card(t):
 
 
     a(f'<g transform="translate(0,{SHIFT})">')
-    gap = 56           # space between columns
+    gap = 44           # space between columns
     top = 229          # first row baseline
     seg_gap = 2.5      # gap between ring segments
     rr = 40 + seg_gap + 2  # ring radius: sphere r + same gap + half the 4px stroke
